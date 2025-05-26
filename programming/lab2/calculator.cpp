@@ -20,6 +20,10 @@ int main() {
         }
         cout << a / b << endl;
         break;
+    case '%':
+        cout << "Остаток от деления: " << int(a) % int(b) << endl;
+        break;
+
 
     default: cout << "Неизвестная операция" << endl;
     }
