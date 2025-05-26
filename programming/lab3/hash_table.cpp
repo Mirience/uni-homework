@@ -2,6 +2,11 @@
 #include <unordered_map>
 #include <string>
 using namespace std;
+void printAllContacts(const unordered_map<string, int>& pb) {
+    for (auto& p : pb) {
+        cout << p.first << ": " << p.second << endl;
+    }
+}
 
 int main() {
     setlocale(LC_ALL, "ru");
@@ -31,9 +36,7 @@ int main() {
     else {
         cout << "Контакт не найден для удаления." << endl;
     }
-    cout << "\nТекущие контакты:\n";
-    for (auto& pair : phonebook) {
-        cout << pair.first << ": " << pair.second << endl;
-    }
+    printAllContacts(phonebook);
+
     return 0;
 }
