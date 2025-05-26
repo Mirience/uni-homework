@@ -31,5 +31,9 @@ int main() {
     else {
         cout << "Контакт не найден для удаления." << endl;
     }
+    cout << "\nТекущие контакты:\n";
+    for (auto& pair : phonebook) {
+        cout << pair.first << ": " << pair.second << endl;
+    }
     return 0;
 }
