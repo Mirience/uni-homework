@@ -5,6 +5,13 @@ int main() {
     setlocale(LC_ALL, "ru");
     double a, b;
     char op;
+    cout << "¬ведите 'q' дл€ выхода или пример (например: 2 + 2): ";
+    string input;
+    cin >> input;
+    if (input == "q") return 0;
+    a = stod(input);
+    cin >> op >> b;
+
 
     cout << "¬ведите выражение (например, 2 + 2): ";
     cin >> a >> op >> b;
