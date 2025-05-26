@@ -14,11 +14,13 @@ int main() {
     case '-': cout << a - b << endl; break;
     case '*': cout << a * b << endl; break;
     case '/':
-        if (b != 0)
-            cout << a / b << endl;
-        else
-            cout << "Ошибка: деление на ноль!" << endl;
+        while (b == 0) {
+            cout << "Ошибка: деление на ноль! Введите другое значение: ";
+            cin >> b;
+        }
+        cout << a / b << endl;
         break;
+
     default: cout << "Неизвестная операция" << endl;
     }
 
