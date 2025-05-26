@@ -37,6 +37,15 @@ int main() {
         cout << "Контакт не найден для удаления." << endl;
     }
     printAllContacts(phonebook);
+    string newName;
+    int newNumber;
+    cout << "Добавить контакт (имя): ";
+    getline(cin >> ws, newName);
+    cout << "Номер: ";
+    cin >> newNumber;
+    phonebook[newName] = newNumber;
+    cout << "Контакт добавлен." << endl;
+
 
     return 0;
 }
