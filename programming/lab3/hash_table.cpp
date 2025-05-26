@@ -21,6 +21,15 @@ int main() {
     else {
         cout << "Контакт не найден." << endl;
     }
+    string toDelete;
+    cout << "Введите имя для удаления: ";
+    cin >> toDelete;
 
+    if (phonebook.erase(toDelete)) {
+        cout << "Контакт удалён." << endl;
+    }
+    else {
+        cout << "Контакт не найден для удаления." << endl;
+    }
     return 0;
 }
