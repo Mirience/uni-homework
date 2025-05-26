@@ -15,7 +15,8 @@ int main() {
         cout << "Ошибка ввода: введите числовое значение температуры." << endl;
         return 1;
     }
-
+    cout << endl;
+    cout << "Совет: ..." << endl;
     if (weather == "sunny") {
         if (temperature > 25) {
             cout << "Совет: наденьте футболку и шорты." << endl;
