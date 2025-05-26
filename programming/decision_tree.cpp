@@ -11,7 +11,10 @@ int main() {
     cin >> weather;
 
     cout << "Введите текущую температуру в градусах Цельсия: ";
-    cin >> temperature;
+    if (!(cin >> temperature)) {
+        cout << "Ошибка ввода: введите числовое значение температуры." << endl;
+        return 1;
+    }
 
     if (weather == "sunny") {
         if (temperature > 25) {
